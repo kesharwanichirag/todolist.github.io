@@ -1,0 +1,105 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>ToDo App</title>
+		<!-------- meta tags ------------>
+		<meta charset="UTF-8">
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- Favicons -->
+		<link href="logo.png" rel="icon">
+
+		<!-- Css --->
+		<link href="style.css" rel="stylesheet">
+		
+		<!-- fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+		
+		<!-- Font awersome CDN -->
+		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	</head>
+	<body>
+	<!-- Background & animion & navbar & title -->
+	  	<div class="container-fluid">
+			<!-- Background animtion-->
+		    <div class="background">
+		       	<div class="cube"></div>
+		       	<div class="cube"></div>
+		       	<div class="cube"></div>
+		       	<div class="cube"></div>
+		     	<div class="cube"></div>
+		    </div>
+			<!-- header -->
+   			<div id="main_body">
+				<!-- logo -->
+	    		<div class="logo">
+	    			<img src="logo.png" id="logo_img">	
+	    		</div>
+	    		<!--<div class="search">
+	    			<input type="search" id="search" placeholder="Search Tasks..">
+	    		</div>-->
+				<!-- title & content -->
+    			<section class="header-content">
+	         		<h1>ToDo LIST</h1>
+	        		
+	        		<input type="hidden" id="hidden_index">
+
+	        		<div>
+	        			<input type="text" id="input" placeholder="Add Task">
+
+	        			<button id="add_btn">
+	        				<span class="fa fa-plus">
+
+	        				</span>
+	        			</button>
+	        			<button id="save_btn" style="display: none;">
+	        				<span class="fa fa-check">
+
+	        				</span>
+	        			</button>
+	        			<button id="undo_btn">
+	        				<span class="fa fa-undo">
+
+	        				</span>
+	        			</button>
+	        			<button id="delete_all_btn">
+	        				<span class="fa fa-trash">
+	        					 
+	        				</span>
+	        				<span style="font-size:14px;">
+	        					Delete All
+	        				</span>
+	        			</button>
+	        		</div>
+	        		<div id="task_msg">
+	        			<small>Please Add Task First</small>
+	        		</div>
+	        		<div id="not_found_msg">
+        				No Tasks Found...
+        			</div>
+	        		<div class="items_container" id="items_container">
+	        			
+	        			<!--<div class="added_item">
+	        				<span class="task_data">
+	        					Video Game 
+	        				</span>
+	        				
+							<i class="fa fa-trash-o fa-2x trash_btn">
+								
+							</i>	
+							<i class="fa fa-edit fa-2x check_btn">
+								
+							</i>        				
+	        			</div>-->
+	        		</div>
+    			</section>
+  			</div>
+  		</div>
+  		
+  		<script src="script.js"></script>
+	</body>
+</html>
