@@ -149,26 +149,3 @@ window.addEventListener("load",(e)=>{
 	showTasksItems();
 });
 
-
-//search list
-/*search.addEventListener("keyup",(e)=>{
-	let added_item = document.querySelectorAll(".added_item");
-
-	let itemList = Array.from(added_item);
-
-	itemList.forEach((item)=>{
-		let searchText = item.getElementsByTagName("span")[0].innerText;
-		
-		let searchVal = search.value;
-
-		let res = new RegExp(searchVal,'gi');
-		if(searchVal.match(res)){
-			console.log(searchVal.match(res));
-			item.style.display = "block";
-
-		}else{
-			item.style.display = "none";
-		}
-	});
-});
-*/
